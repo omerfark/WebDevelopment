@@ -1,0 +1,73 @@
+.card-image-container {
+  position: relative;
+}
+
+.card-image-container .card-text-overlay {
+  position: absolute;
+  text-align: center;
+  height: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Saydam arka plan rengi */
+  color: black; /* Metin rengi */
+  padding: 1px; /* İstediğiniz kadar iç boşluk ekleyebilirsiniz */
+}
+
+
+.mainpage_card{ //anasayfadaki kartları rowlarda ve columda ortalamak icin kullanılacak
+  display: grid;
+}
+
+@media (max-width: 1002px) {
+  .container {
+    display: grid;
+    flex-direction: column; /* Kartları yatay olarak sırala */
+  }
+}
+
+@media (max-width: 999px) {
+  .container_edu {
+    display: grid;
+    flex-direction: column; /* Kartları yatay olarak sırala */
+  }
+
+  .card-image-container {
+    position: relative;
+  }
+  
+  .card-image-container .card-text-overlay {
+    position: absolute;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5); /* Saydam arka plan rengi */
+    color: black; /* Metin rengi */
+    padding: 1px; /* İstediğiniz kadar iç boşluk ekleyebilirsiniz */
+  }
+  .eduColumn{  //eğitimleri aralığı kücültür
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+}
+
+.CarouselCaption {
+  position: absolute;
+  bottom:300px;
+  left: 540px;
+  width: 800px;
+  height: 230px;
+  text-align: center;
+  background-color: rgba(167, 167, 167, 0.6); /* Arka plan rengi */
+  padding-top: 50px;
+  box-shadow: 0 0 20px rgba(194, 194, 194, 0.5);
+}
+
+.CarouselCaption h3{
+  color:black;
+  font-weight: bold;
+  text-align: left;
+}
+.CarouselCaption p{
+  color:black;
+  text-align: left;
+}

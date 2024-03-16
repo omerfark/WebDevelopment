@@ -1,0 +1,10 @@
+.mainpage_card{ //anasayfadaki kartları rowlarda ve columda ortalamak icin kullanılacak
+    display: grid;
+    margin: 20px;
+  }
+
+  .card-content {
+    width: 100px; /* Kartın genişliği */
+    height: 500px; /* Kartın yüksekliği */
+  }
+  

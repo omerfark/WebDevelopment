@@ -1,0 +1,51 @@
+ul{
+  text-align: left;
+  font-size: 1.3rem;
+}
+.list li {
+  display: none; /* Tüm <li> öğelerini varsayılan olarak gizleyin */
+}
+
+.list:hover li {
+  display: block; /* <ul> üzerine gelindiğinde <li> öğelerini göster */
+}
+
+li a{
+  font-weight: 500;
+  color: rgb(88, 88, 88);
+  font-size: 1rem;
+  
+}
+
+hr {
+  border: none; /* Çizgiye sınırları kaldırır */
+  border-top: 3px solid #000000; /* Çizgi rengini ve kalınlığını ayarlar */
+  margin: 10px 0; /* Çizgi ile diğer öğeler arasındaki boşluğu ayarlar */
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 300px;
+  overflow: auto;
+}
+
+.search-button {
+  background-color: black;
+  width: 40px;
+  height: 45px;
+  outline: auto;
+  cursor: pointer;
+}
+
+.search-button i {
+  color: white;
+}
+
+.search-bar input {
+  border: none; 
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+}

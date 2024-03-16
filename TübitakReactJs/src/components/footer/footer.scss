@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+}
+
+h6 {
+    position: relative;
+  }
+  
+h6::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Çizginin yüksekliği */
+    width: 100%;
+    height: 2px; /* Çizgi kalınlığı */
+    background-color: #cf0000; /* Çizgi rengi */
+}
+
+
+p,h6,a{
+    color: white;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 360px;   /* Height of the footer */
+    background: rgb(0, 0, 0);
+ }
+
+ @media (max-width: 1410px) {
+    .footer {
+        padding-top: 5px;
+        position: absolute;
+        flex-direction: column;
+        bottom: 0;
+        width: 100%;
+        height: auto;   /* Height of the footer */
+        background: rgb(0, 0, 0);
+     }
+  }
