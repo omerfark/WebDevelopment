@@ -1,7 +1,6 @@
 package com.example.service;
 
 import com.example.dto.AboutUstDTO;
-import com.example.dto.EducationDTO;
 
 import java.util.List;
 
